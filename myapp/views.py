@@ -3,7 +3,8 @@ from django.http import HttpResponse
 
 # Create your views here.
 def index(request):   
-    return render(request, 'index.html')
+    context = {'name':'ahsan','types':'student'}
+    return render(request, 'index.html',context)
 def home(request):
     return HttpResponse('this is home section')
 
