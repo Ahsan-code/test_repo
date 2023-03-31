@@ -5,7 +5,9 @@ from django.http import HttpResponse
 def index(request):   
     return render(request, 'index.html')
 def home(request):
-    return HttpResponse('this is home section')
+    return render(request,'home.html')
 
-def office(request):
-    return HttpResponse('This page is dedicated to official matterials')
+def contact(request):
+    return render(request,'contact.html')
+def about(request):
+    return render(request,'about.html')
